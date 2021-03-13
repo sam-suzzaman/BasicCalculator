@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.calculator-wrapper {
+    width: 20%;
+    height: 70vh;
+    background-color: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+
+.display-box {
+    width: 100%;
+    min-height: 110px;
+    background: rgba(255, 255, 255, 0.3);
+    outline: none;
+    border: none;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 35px;
+    font-size: 35px;
+    letter-spacing: 2px;
+    padding: 0 5px;
+}
+
+
+
+.button,
+.equal,
+.clear {
+    width: 33.3%;
+    float: left;
+    color: #000;
+    cursor: pointer;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+    transition: .3s;
+    margin-bottom: 5px;
+    border-radius: 3px;
+}
+
+.x {
+    width: 33.3%;
+    float: left;
+    color: #000;
+    cursor: pointer;
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+}
+
+.button.operator {
+    background: rgba(5, 151, 127, 0.3);
+}
+
+.equal {
+    background: rgba(8, 70, 33, 0.7);
+}
+
+.clear {
+    background: rgba(211, 34, 22, 0.7);
+}
+
+.clr {
+    clear: both;
+}
+
+.button:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.button:active,
+.button:focus,
+.clear:hover,
+.equal:hover {
+    background: green;
+}
